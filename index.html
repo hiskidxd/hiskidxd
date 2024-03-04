@@ -14,7 +14,7 @@ READ HERE how to fully customize the messages shown to your members https://gith
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Verify for Discord</title>
+    <title>HisKid Town Verification</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="preload" href="./src/green_circle_checkmark.svg" as="image">
     <link rel="preload" href="./src/red_circle_checkmark.svg" as="image">
@@ -22,6 +22,14 @@ READ HERE how to fully customize the messages shown to your members https://gith
     <link rel="preload" href="./src/jquery.min.js" as="script">
     <link id="favicon" rel="shortcut icon" href="./src/green_circle_checkmark.svg">
     <link rel="stylesheet" href="./src/output.min.css">
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
     <script src="./src/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.vaultcord.com/verify-1-0.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -64,6 +72,52 @@ READ HERE how to fully customize the messages shown to your members https://gith
     background-size: cover;
     background-repeat: no-repeat;body
         }
+        .socials-nav-bar i.fa-brands
+{
+    background-color: var(--black);
+    height: 45px;
+    width: 45px;
+    padding-left: 11.5px;
+    padding-top: 22px;
+    border-radius: 1.8rem;
+    margin-right: 5px;
+    color: var(--aqua);
+}
+
+i.fa-youtube, i.fa-discord
+{
+    font-size: larger;
+}
+
+i.fa-youtube:hover
+{
+    background-color: var(--white);
+    color: var(--yt-color);
+}
+
+i.fa-x-twitter:hover
+{
+    color: var(--white);
+}
+
+i.fa-discord:hover
+{
+    color: #fff;
+    background-color: #7289da;
+}
+
+i.fa-instagram:hover
+{
+    color : var(--white);
+    background-color: var(--instagram);
+}
+
+i.fa-tiktok:hover
+{
+    color: var(--white);
+    background-color: var(--black);
+}
+
     </style>
 </head>
 
@@ -139,7 +193,32 @@ READ HERE how to fully customize the messages shown to your members https://gith
             <a id="serverUnlinkBtn" href="https://discord.gg/xdhiskid"
                 class="text-white border-2 hover:opacity-70 focus:ring-0 focus:outline-none transition duration-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center me-2 mb-3 w-96 hidden">
                 Go Back To Server</a>
-
+            <div class="socials-nav-bar">
+            <a href="#"
+                ><span class="social-bar linkedin"
+                  ><i class="fa-brands fa-youtube fa-xl"></i></span
+              ></a>
+              <a href="#"
+                ><span class="social-bar github"
+                  ><i class="fa-brands fa-instagram fa-xl"></i></span
+              ></a>
+              <a href="#"
+                ><span class="social-bar twitter"
+                  ><i class="fa-brands fa-discord fa-xl"></i></span
+              ></a>
+              <a href="#"
+                ><span class="social-bar telegram"
+                  ><i class="fa-brands fa-youtube fa-xl"></i></span
+              ></a>
+              <a href="#"
+                ><span class="social-bar instagram"
+                  ><i class="fa-brands fa-x-twitter fa-xl"></i></span
+              ></a>
+              <a href="#"
+                ><span class="social-bar dev"
+                  ><i class="fa-brands fa-tiktok fa-xl"></i></span
+              ></a>
+            </div>
             <div class="hidden">
                 <div id="serverTitle" class="text-xs" vc-invalid-domain="Invalid domain"
                     vc-captcha-require="vc-captcha-require" vc-verify-success="vc-verify-success"
